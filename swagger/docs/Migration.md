@@ -1,0 +1,46 @@
+# Migration
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**MigrationId** | **string** |  | [optional] [default to null]
+**InternalId** | **string** |  | [optional] [default to null]
+**Path** | **string** |  | [optional] [default to null]
+**ScanOnlyMigration** | **bool** |  | [optional] [default to null]
+**RecurringMigration** | **bool** |  | [optional] [default to null]
+**RecurringPeriodSeconds** | **int32** |  | [optional] [default to null]
+**DeletionMode** | [***DeletionMode**](DeletionMode.md) |  | [optional] [default to null]
+**DelayedDeletionPeriodSeconds** | **int32** |  | [optional] [default to null]
+**AutoSourceCleanupEnabled** | **bool** |  | [optional] [default to null]
+**Source** | **string** |  | [optional] [default to null]
+**Target** | **string** |  | [optional] [default to null]
+**State** | [***MigrationState**](MigrationState.md) |  | [optional] [default to null]
+**Resumable** | **bool** |  | [optional] [default to null]
+**AbortReason** | **string** |  | [optional] [default to null]
+**Exclusions** | [**[]Exclusion**](Exclusion.md) |  | [optional] [default to null]
+**UserDefinedExclusions** | [**[]Exclusion**](Exclusion.md) |  | [optional] [default to null]
+**TargetActionPolicy** | **string** |  | [optional] [default to null]
+**PathMappings** | [**[]PathMapping**](PathMapping.md) |  | [optional] [default to null]
+**UnscheduledEvents** | **int32** |  | [optional] [default to null]
+**ScheduledEvents** | **int32** |  | [optional] [default to null]
+**FailedPathCount** | **int64** |  | [optional] [default to null]
+**AutoSourceCleanupQueuedPaths** | **int64** |  | [optional] [default to null]
+**MaxStoppedUnscheduledEventBufferSize** | **int32** |  | [optional] [default to null]
+**MigrationCreatedTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
+**MigrationStartTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
+**MigrationCompleteTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
+**MigrationEdge** | **string** |  | [optional] [default to null]
+**ScannerSummary** | [***ScannerContentSummary**](ScannerContentSummary.md) |  | [optional] [default to null]
+**ClientActivitySummary** | [***ScannerContentMatrix**](ScannerContentMatrix.md) |  | [optional] [default to null]
+**MaxPendingRegions** | **int32** |  | [optional] [default to null]
+**PendingRegionCount** | **int64** |  | [optional] [default to null]
+**MigrationGates** | [**[]MigrationGate**](MigrationGate.md) |  | [optional] [default to null]
+**RecurringMigrationTracker** | [***RecurringMigrationTracker**](RecurringMigrationTracker.md) |  | [optional] [default to null]
+**SourceCleanupTracker** | [***SourceCleanupTracker**](SourceCleanupTracker.md) |  | [optional] [default to null]
+**AdditionalProperties** | **map[string]string** |  | [optional] [default to null]
+**OldestIncompleteWorkItem** | [***OldestIncompleteWorkItem**](OldestIncompleteWorkItem.md) |  | [optional] [default to null]
+**NumberPathsRequeued** | **int64** |  | [optional] [default to null]
+**MigrationPriority** | [***MigrationPriority**](MigrationPriority.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
