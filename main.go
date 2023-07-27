@@ -368,10 +368,14 @@ WriteRandomFiles
 */
 func (c hdfsClient) WriteRandomFiles(root string, depth int32, opts *options) error {
 	var wg sync.WaitGroup
-	wg.Add(int(opts.files))
+	numFiles := opts.files
+	if opts.randomfanout {
+		numFiles = rand.Int31n(numFiles)
+	}
+	wg.Add(int(numFiles))
 
 	workers := make(chan int, opts.concurrent)
-	for i := int32(0); i < opts.files; i++ {
+	for i := int32(0); i < numFiles; i++ {
 		go c.WriteRandomFile(root, opts, &wg, workers)
 	}
 
